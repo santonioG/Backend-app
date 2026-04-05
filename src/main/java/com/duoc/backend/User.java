@@ -2,9 +2,7 @@ package com.duoc.backend;
 
 import java.util.Collection;
 
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -31,6 +29,7 @@ public class User implements UserDetails {
         this.id = id;
     }
 
+    @Override
     public String getUsername() {
         return username;
     }
@@ -47,6 +46,7 @@ public class User implements UserDetails {
         this.email = email;
     }
 
+    @Override
     public String getPassword() {
         return password;
     }
@@ -56,31 +56,26 @@ public class User implements UserDetails {
     }
     @Override
     public Collection getAuthorities() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getAuthorities'");
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'isAccountNonExpired'");
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'isAccountNonLocked'");
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'isCredentialsNonExpired'");
     }
 
     @Override
     public boolean isEnabled() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'isEnabled'");
     }
 

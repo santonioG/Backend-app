@@ -1,12 +1,19 @@
 package com.duoc.backend.Invoice;
 
-import com.duoc.backend.Care.Care;
-import com.duoc.backend.Medication.Medication;
-
-import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
+
+import com.duoc.backend.Care.Care;
+import com.duoc.backend.Medication.Medication;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 
 @Entity
 public class Invoice {
@@ -24,7 +31,6 @@ public class Invoice {
         inverseJoinColumns = @JoinColumn(name = "care_id")
     )
     private List<Care> cares;
-
 
     @ManyToMany
     @JoinTable(
