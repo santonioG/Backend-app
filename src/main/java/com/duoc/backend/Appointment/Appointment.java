@@ -1,11 +1,12 @@
-package com.duoc.backend.Appointment;
+package com.duoc.backend.appointment;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import java.time.LocalDate;
-import java.time.LocalTime;
 
 @Entity
 public class Appointment {
