@@ -1,11 +1,14 @@
 package com.duoc.backend;
-import io.jsonwebtoken.io.Decoders;
-import io.jsonwebtoken.security.Keys;
-
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
 
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+
 public class Constants {
+
+        private Constants() {
+    }
 
     // Spring Security
     public static final String LOGIN_URL = "/login";
