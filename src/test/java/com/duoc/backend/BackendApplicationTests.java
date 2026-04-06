@@ -8,6 +8,7 @@ class BackendApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// Esta prueba asegura que el contexto de Spring se carga correctamente sin errores de configuración.
 	}
 
 }
