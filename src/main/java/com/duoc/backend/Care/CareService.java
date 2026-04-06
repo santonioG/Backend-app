@@ -1,9 +1,9 @@
-package com.duoc.backend.Care;
+package com.duoc.backend.care;
+
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class CareService {

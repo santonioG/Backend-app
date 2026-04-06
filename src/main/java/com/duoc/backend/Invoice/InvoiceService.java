@@ -1,16 +1,16 @@
-package com.duoc.backend.Invoice;
-
-import com.duoc.backend.Care.Care;
-import com.duoc.backend.Care.CareRepository;
-import com.duoc.backend.Medication.Medication;
-import com.duoc.backend.Medication.MedicationRepository;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+package com.duoc.backend.invoice;
 
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.duoc.backend.care.Care;
+import com.duoc.backend.care.CareRepository;
+import com.duoc.backend.medication.Medication;
+import com.duoc.backend.medication.MedicationRepository;
 
 @Service
 public class InvoiceService {

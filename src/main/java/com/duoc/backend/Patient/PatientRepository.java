@@ -1,4 +1,4 @@
-package com.duoc.backend.Patient;
+package com.duoc.backend.patient;
 
 import org.springframework.data.repository.CrudRepository;
 
