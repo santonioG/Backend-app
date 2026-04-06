@@ -20,7 +20,7 @@ class WebSecurityConfig{
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
 
         http
-                .csrf((csrf) -> csrf
+                .csrf(csrf -> csrf // Paréntesis eliminados alrededor de csrf
                         .disable())
                 .authorizeHttpRequests( authz -> authz
 

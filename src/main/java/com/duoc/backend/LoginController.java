@@ -27,11 +27,11 @@ public class LoginController {
         final UserDetails userDetails = userDetailsService.loadUserByUsername(username);
 
         if (!userDetails.getPassword().equals(encryptedPass)) {
-            throw new RuntimeException("Invalid login");
+            throw new InvalidCredentialsException("Credenciales de acceso inválidas"); //Exepción especifica
         }
 
-        String token = jwtAuthtenticationConfig.getJWTToken(username);
-        return token;
+        // Retornar directamente la expresión sin asignar a variable temporal token
+        return jwtAuthtenticationConfig.getJWTToken(username);
     }
 
 }
